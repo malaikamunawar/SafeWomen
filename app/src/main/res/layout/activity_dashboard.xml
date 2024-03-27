@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".dashboard">
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="133dp"
+        android:background="@drawable/profile"
+        android:contentDescription="@string/project_id"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="94dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="3dp"
+        android:src="@drawable/icon"
+        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/lato_bold"
+        android:text="SafeWomen"
+        android:textColor="#063970"
+        android:textSize="34dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.655"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="188dp"
+        android:src="@drawable/security"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sos"
+        android:layout_width="250dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="448dp"
+        android:background="@drawable/style_btn"
+        android:text="Send Alert on Whatsapp"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints,TextSizeCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/callpolice"
+        android:layout_width="250dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/style_btn"
+        android:text="Call Police"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintCircleRadius="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sos"
+        tools:ignore="MissingConstraints,TextSizeCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/callcontact"
+        android:layout_width="250dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="92dp"
+        android:background="@drawable/style_btn"
+        android:text="Call Emergency Contact"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintCircleRadius="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/callpolice"
+        tools:ignore="MissingConstraints,TextSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

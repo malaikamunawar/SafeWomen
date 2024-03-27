@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background"
+            android:orientation="vertical"
+            app:layout_constraintStart_toEndOf="@id/la0"
+            tools:context=".profile">
+
+            <LinearLayout
+                android:id="@+id/la0"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toEndOf="@id/scrollView"
+                app:layout_constraintStart_toStartOf="@id/la0">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="86dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="4dp"
+                    android:src="@drawable/icon"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/ca"
+                    android:layout_width="267dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginEnd="40dp"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="Create Account"
+                    android:textColor="#063970"
+                    android:textSize="34dp"
+                    app:flow_horizontalAlign="center"
+                    app:flow_verticalAlign="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.858"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/la1"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="Name"
+                    android:textColor="@color/txt"
+                    android:textSize="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="TextSizeCheck" />
+
+                <EditText
+                    android:id="@+id/tfname"
+                    android:layout_width="250dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_edittext"
+                    android:fontFamily="@font/lato_regular"
+                    android:gravity="center"
+                    android:hint="Enter name"
+                    android:textColor="@color/black"
+
+                    android:textColorHint="@color/grey"
+                    android:textSize="15dp"
+                    app:layout_constraintStart_toEndOf="@+id/name"
+                    tools:ignore="TouchTargetSizeCheck,TextSizeCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/la2"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/phone"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="Phone no"
+                    android:textColor="@color/txt"
+                    android:textSize="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="TextSizeCheck" />
+
+                <EditText
+                    android:id="@+id/tfphone"
+                    android:layout_width="250dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_edittext"
+                    android:fontFamily="@font/lato_regular"
+                    android:gravity="center"
+                    android:hint="Enter Phone Number"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey"
+                    android:textSize="15dp"
+                    app:layout_constraintStart_toEndOf="@+id/phone"
+                    app:layout_constraintTop_toBottomOf="@+id/tfname"
+                    tools:ignore="TouchTargetSizeCheck,TextSizeCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/la3"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/emergencycontact"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="Emergency Contact Name"
+                    android:textColor="@color/txt"
+                    android:textSize="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="TextSizeCheck" />
+
+                <EditText
+                    android:id="@+id/tfemergency"
+                    android:layout_width="250dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_edittext"
+                    android:fontFamily="@font/lato_regular"
+                    android:gravity="center"
+                    android:hint="Enter contact name"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey"
+                    android:textSize="15dp"
+                    app:layout_constraintStart_toEndOf="@+id/phone"
+                    app:layout_constraintTop_toBottomOf="@+id/tfname"
+                    tools:ignore="TouchTargetSizeCheck,TextSizeCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/la4"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/emergencyno"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="Emergency Contact No"
+                    android:textColor="@color/txt"
+                    android:textSize="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="TextSizeCheck" />
+
+                <EditText
+                    android:id="@+id/tfemergencyno"
+                    android:layout_width="250dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_edittext"
+                    android:fontFamily="@font/lato_regular"
+                    android:gravity="center"
+                    android:hint="Enter contact number"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey"
+                    android:textSize="15dp"
+                    app:layout_constraintStart_toEndOf="@+id/emergencyno"
+                    tools:ignore="TouchTargetSizeCheck,TextSizeCheck" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/la5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/relation"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="Relation with the person"
+                    android:textColor="@color/txt"
+                    android:textSize="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="TextSizeCheck" />
+
+                <EditText
+                    android:id="@+id/tfrelation"
+                    android:layout_width="250dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_edittext"
+                    android:fontFamily="@font/lato_regular"
+                    android:gravity="center"
+                    android:hint="Relation with the person"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey"
+                    android:textSize="15dp"
+                    app:layout_constraintStart_toEndOf="@+id/phone"
+                    app:layout_constraintTop_toBottomOf="@+id/tfname"
+                    tools:ignore="TouchTargetSizeCheck,TextSizeCheck" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="140dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="140dp"
+                android:background="@drawable/style_btn"
+                android:padding="15dp"
+                android:text="Save"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/la5"
+                tools:ignore="MissingConstraints,TextSizeCheck" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</RelativeLayout>
+
+
+
+
+
